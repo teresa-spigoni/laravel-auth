@@ -16,7 +16,17 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-
 Auth::routes();
-
 Route::get('/home', 'HomeController@index')->name('home');
+
+
+// My Routes
+Route::get('flights', 'PublicController@index')->name('public.flights.index'); // index pubblica
+Route::get('flights/{flight}', 'PublicController@show')->name('public.flights.show'); // show pubblica
+
+Route::prefix('admin')
+    ->namespace('Admin')
+    ->middleware('auth')
+    ->group(function(){
+        Route::resource('/flights', PrivateController::class); // create, store, edit, update e destroy private
+    });

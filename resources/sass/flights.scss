@@ -1,0 +1,136 @@
+$baseColor: #0057a7;
+$min-height: calc(100vh - 185px);
+
+header{
+    margin: 20px 0 50px 10px;
+    .header-pic{
+        width: 200px;
+    }
+}
+
+footer{
+    font-size: 14px;
+    text-align: center;
+    padding: 20px;
+    color: $baseColor;
+}
+
+#root, #show-root, #create-root, #edit-root{
+    min-height: $min-height;
+}
+
+#root{
+    position: relative;
+
+    .create-b{
+        position: absolute;
+        bottom: 0;
+        right: 50px;
+
+        a{
+            color: #fff;
+        }
+    }
+
+    .flights-table{
+        width: 1200px;
+        margin: 0 auto;
+        color: $baseColor;
+        box-shadow: 0 0 20px #c1c1c1;
+
+        .thead-adr{
+            background-color: $baseColor;
+            color: #fff;
+        }
+
+        .company-pic{
+            width: 50px;
+            vertical-align: middle;
+        }
+
+        .buttons-col{
+            width: 250px;
+
+            a{
+                color: #fff;
+                font-size: 10px;
+            }
+
+            button{
+                width: 40px;
+                height: 30px;
+                font-size: 10px;
+                text-align: center;
+            }
+
+            .form-delete{
+                display: inline-block;
+            }
+
+            span a{
+                color: $baseColor;
+                font-size: 13px;
+                margin-left: 5px;
+            }
+        }
+    }
+}
+
+#show-root{
+
+    .details{
+        width: 500px;
+        color: $baseColor;
+        display: inline-block;
+        margin-top: 50px;
+        margin-left: 40px;
+        padding: 20px;
+        box-shadow: 0 0 20px $baseColor;
+        position: relative;
+
+        .show-flight-img{
+            width: 50px;
+            vertical-align: top;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+        h1{
+            font-size: 45px;
+        }
+
+        .edit-b{
+            margin-top: 20px;
+
+            a{
+                color: #fff;
+            }
+        }
+    }
+}
+
+#create-root, #edit-root{
+    width: 700px;
+    margin-left: 60px;
+
+    label{
+        color: $baseColor;
+        font-weight: bold;
+    }
+
+    input{
+        color: $baseColor;
+
+    }
+
+    input::placeholder{
+        color: $baseColor;
+        font-size: 12px;
+    }
+
+    .form-b{
+        margin-top: 20px;
+        color: #fff;
+    }
+}
