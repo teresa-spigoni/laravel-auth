@@ -84,7 +84,15 @@ class PrivateController extends Controller
 
     protected function formValidation(Request $request){
         $request->validate([
-            'arrival' => 'required'
+            'airline_company' => 'required',
+            'airline_company_pic' => 'required',
+            'identifier' => 'required',
+            'aircraft' => 'required',
+            'departure' => 'required',
+            'departure_datetime' => 'required',
+            'arrival' => 'required',
+            'arrival_datetime' => 'required',
+            'status' => 'required'
         ]);
     }
 
