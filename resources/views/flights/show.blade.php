@@ -6,14 +6,16 @@
 
     <div class="details">
 
+        <button class="btn btn-primary back-btn"><a href="{{route('public.flights.index')}}"><i class="fas fa-long-arrow-alt-left"></i> All flights</a></button>
+
         <img class="show-flight-img" src="{{$flight->airline_company_pic}}" alt="">
         <h1>Flight details</h1>
 
         <div><b>Airline Company: </b>{{$flight->airline_company}}</div>
         <div><b>Identifier: </b>{{$flight->identifier}}</div>
         <div><b>Aircraft: </b>{{$flight->aircraft}}</div>
-        <div><b>Departure: <br></b>from {{$flight->departure}} <br> {{$flight->departure_datetime}}</div>
-        <div><b>Arrival: <br></b>to {{$flight->arrival}} <br> {{$flight->arrival_datetime}}</div>
+        <div><b>Departure: <br></b>from {{$flight->departure}} <br> {{$flight->departure_datetime}} <br> {{$flight->departure_terminal}}</div>
+        <div><b>Arrival: <br></b>to {{$flight->arrival}} <br> {{$flight->arrival_datetime}} <br> {{$flight->arrival_terminal}}</div>
         <div><b>Status: </b>{{$flight->status}}</div>
         <div><b>Ultimo aggiornamento: </b>{{$flight->updated_at}}</div>
 

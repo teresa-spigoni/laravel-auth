@@ -102,6 +102,7 @@ footer{
 
 #show-root{
 
+
     .details{
         width: 500px;
         color: $baseColor;
@@ -111,6 +112,16 @@ footer{
         padding: 20px;
         box-shadow: 0 0 20px $baseColor;
         position: relative;
+
+        .back-btn{
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+        }
+
+        .back-btn a{
+            color: #fff;
+        }
 
         .show-flight-img{
             width: 50px;

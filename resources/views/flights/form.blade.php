@@ -87,6 +87,22 @@
         </div>
     </div>
 
+    <div class="form-group">
+        <label for="departure_terminal">Departure Terminal</label>
+        <input type="text" name="departure_terminal" class="form-control {{ $errors->has('departure_terminal') ? 'is-invalid' : '' }}" id="departure_terminal" placeholder="Departure Terminal" required value="{{isset($flight) ? $flight->departure_terminal : ''}}">
+        <div class="invalid-feedback">
+            {{ $errors->first('departure_terminal') }}
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="arrival_terminal">Arrival Terminal</label>
+        <input type="text" name="arrival_terminal" class="form-control {{ $errors->has('arrival_terminal') ? 'is-invalid' : '' }}" id="arrival_terminal" placeholder="Arrival Terminal" required value="{{isset($flight) ? $flight->arrival_terminal : ''}}">
+        <div class="invalid-feedback">
+            {{ $errors->first('arrival_terminal') }}
+        </div>
+    </div>
+
     <input type="submit" value="Submit" class="btn btn-primary form-b">
 
 </form>

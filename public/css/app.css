@@ -10101,6 +10101,14 @@ footer {
   box-shadow: 0 0 20px #0057a7;
   position: relative;
 }
+#show-root .details .back-btn {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+#show-root .details .back-btn a {
+  color: #fff;
+}
 #show-root .details .show-flight-img {
   width: 50px;
   vertical-align: top;
