@@ -49,13 +49,10 @@
                             <button class="btn btn-primary"><a href="{{route('flights.edit', compact('flight'))}}"><i class="far fa-edit"></i></a></button>
 
                             {{-- pulsante delete --}}
-                            <form class="form-delete" action="{{route('flights.destroy', compact('flight'))}}" method="post">
-                                @csrf
-                                @method('DELETE')
-                                <button type="submit" class="btn btn-danger">
-                                    <i class="far fa-trash-alt"></i>
-                                </button>
-                            </form>
+                            <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModalCenter{{ $flight->id }}">
+                                <i class="far fa-trash-alt"></i>
+                            </button>
+                            @include('flights.modal')
                         @else
                             <span><a href="{{route('public.flights.show', compact('flight'))}}">Click to read more</a></span>
                         @endif

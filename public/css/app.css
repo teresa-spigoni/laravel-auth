@@ -10071,6 +10071,25 @@ footer {
   font-size: 13px;
   margin-left: 5px;
 }
+#root .flights-table .buttons-col .modal-content {
+  border: none;
+}
+#root .flights-table .buttons-col .modal-header, #root .flights-table .buttons-col .modal-footer {
+  background-color: #0057a7;
+  color: #fff;
+  height: 60px;
+}
+#root .flights-table .buttons-col .modal-header i {
+  color: orange;
+}
+#root .flights-table .buttons-col .modal-header .close {
+  font-size: 15px;
+  color: #fff;
+}
+#root .flights-table .buttons-col .modal-body {
+  min-height: 150px;
+  font-size: 17px;
+}
 
 #show-root .details {
   width: 500px;

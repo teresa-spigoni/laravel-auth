@@ -105,6 +105,6 @@ class PrivateController extends Controller
     public function destroy(Flight $flight)
     {
         $flight->delete();
-        return view('flights.index');
+        return redirect()->route('public.flights.index');
     }
 }

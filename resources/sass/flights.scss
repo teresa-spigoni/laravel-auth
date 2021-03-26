@@ -72,6 +72,30 @@ footer{
                 font-size: 13px;
                 margin-left: 5px;
             }
+
+            .modal-content{
+                border: none;
+            }
+
+            .modal-header, .modal-footer{
+                background-color: $baseColor;
+                color: #fff;
+                height: 60px;
+            }
+
+            .modal-header i{
+                color: orange;
+            }
+
+            .modal-header .close{
+                font-size: 15px;
+                color: #fff;
+            }
+
+            .modal-body{
+                min-height: 150px;
+                font-size: 17px;
+            }
         }
     }
 }
